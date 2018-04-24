@@ -1,0 +1,32 @@
+<html>
+<head>
+<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.js"></script>
+<link rel="stylesheet" href="https://at.alicdn.com/t/font_641908_dudd1b706omkj4i.css">
+  <style>
+    .wrap{
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%,-50%)
+    }
+    .iconfont{
+      font-size:64px;
+      color:red;
+    }
+  </style>
+</head>
+<body>
+   <div class="wrap">
+     <span class="inner"><i class="iconfont icon-start"></i></span>
+   </div>
+   <script>
+       /*$('inner').on('click',function(){
+        $(this).find('.iconfont').toggleClass('icon-pause').toggleClass('icon-start')
+    })*/
+    $('.inner').on('click', function(){
+      var $i =$(this).find('.iconfont') 
+      $i.toggleClass('icon-pause').toggleClass('icon-start')
+    })
+   </script>
+</body>
+</html>
